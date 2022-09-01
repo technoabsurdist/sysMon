@@ -17,4 +17,3 @@ def sorted_processes(sort_by) -> list:
         return sorted_list  
     else:
         return []
-   

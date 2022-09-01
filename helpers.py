@@ -12,7 +12,7 @@ def ram_usage() -> float:
 
 def processes_by_cpu(sort_by) -> list:
     '''List of running processes sorted by CPU usage'''
-    sorted_processes(sort_by)
+    return sorted_processes(sort_by)
 
 def processes_by_memory(sort_by) -> list:
     '''List of running processes sorted by memory usage'''    
@@ -21,3 +21,11 @@ def processes_by_memory(sort_by) -> list:
 def separator():
     print("\n****************")
 
+def average(lst):
+    return sum(lst)/len(lst)
+
+def wrapper_print(out):
+    print("\n================================================================")
+    print(out)
+    print("================================================================\n")
+    
