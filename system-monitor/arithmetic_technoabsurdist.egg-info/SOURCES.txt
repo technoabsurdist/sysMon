@@ -1,0 +1,6 @@
+README.md
+setup.py
+arithmetic_technoabsurdist.egg-info/PKG-INFO
+arithmetic_technoabsurdist.egg-info/SOURCES.txt
+arithmetic_technoabsurdist.egg-info/dependency_links.txt
+arithmetic_technoabsurdist.egg-info/top_level.txt
