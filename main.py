@@ -40,9 +40,9 @@ def formatter(processes):
 def intro():
     '''Prints introduction to SyMonit'''
     # Printing
-    wrapper_print("Thanks for using SyMonit. Processing your system monitor review.")
+    print("\nThanks for using SyMonit. Processing your system monitor review.")
     time.sleep(0.5)
-    print("Processing your results...")
+    print(f"\n{bcolors.UNDERLINE}Processing your results...{bcolors.ENDC}")
     
 def cpu_info():
     '''Print all --formatted-- CPU info'''
@@ -62,10 +62,17 @@ def ram_info():
     wrapper_print("RAM Total Usage")
     print(str(ram_usage_list) + "%")
 
-
-
-
-
+# colors to print to terminal
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 
